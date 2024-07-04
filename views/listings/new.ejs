@@ -1,0 +1,72 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <form method="post" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="row mt-3">
+            <div class="col-8 offset-2">
+              
+                 <h3> Create a new listing</h3>
+        <div class="mb-3">
+        <label for="title" class="form-label"> Title</label>
+        <input name="listing[title]" placeholder="Add a catchy title" type="text" class="form-control" required>
+        <div class="valid-feedback">  Title looks good</div>
+        <div class="invalid-feedback"> Enter valid title</div>
+       
+</div>
+<div class="mb-3">
+    <label for="description" class="form-label " > Description</label>
+        <textarea name="listing[description]"  class="form-control" required></textarea>
+        <div class="invalid-feedback"> Enter shorter description</div>
+        </div>
+        
+       <div class="mb-3">
+        <label for="image" class="form-label"> 
+           Upload listing Image
+        </label>
+    <input name="listing[image]"  class="form-control" type="file">
+   </div>
+       <div class="row">
+       
+       <div class="mb-3 col-md-4">
+        <label for="price" class="form-label"> Price</label>
+        <input name="listing[price]" placeholder="1200" class="form-control" required>
+        <div class="invalid-feedback"> Enter valid price</div>
+       </div>
+
+ <div class="mb-3 col-md-8">
+
+        <label for="country" class="form-label"> Country</label>
+        <input name="listing[country]" placeholder="India" type="text" class="form-control" required>
+        <div class="invalid-feedback"> Enter valid country</div>
+       </div>
+</div>
+
+
+       <div class="mb-3">
+        <label for="location" class="form-label"> Location</label>
+        <input name="listing[location]" placeholder="chepauk,chennai" type="text" class="form-control" required>
+        <div class="invalid-feedback"> Enter valid location</div>
+       </div>
+       <div class="mb-3 ">         
+        <label for="category">Category:</label>
+        <select name="listing[category]" id="category" class="form-select form-select-sm">
+            <option value="Farms">Farms</option>
+            <option value="Amazing pools">Amazing pools</option>
+            <option value="Rooms">Rooms</option>
+            <option value="Castles">Castles</option>
+            <option value="Camping">Camping</option>
+            <option value="Arctic">Arctic</option>
+           
+            <option value="Mountains">Mountains</option>
+            <option value="Iconic cities">Iconic cities</option>
+        </select>
+       </div>
+      
+        <button class="btn btn-dark add-btn mt-3">Add</button>
+       
+    
+
+
+    </form>
+    </div>
+</div>
+</body>
