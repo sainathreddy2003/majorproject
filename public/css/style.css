@@ -159,5 +159,49 @@ width: 100%;
     align-items: center;
     
   }
+  @media only screen and (max-width: 750px) {
+    .navbar{
+    background-color: #fff;
+    height: 20%;
+  }
+  .search-inp{
+    font-size: 0.5rem;
+    width: 70%;
+    margin-top: 1rem !important;
+  }
+  .search-btn{
+    width: 5.25rem !important;
+    font-size: 0.5rem;
+    margin-top: 1rem !important;
+    padding:0px 10px !important;
+  }
+  .search-btn i {
+    font-size: 0.7rem;
+  }
+  .search-btn span {
+    font-size: 0.8rem;
+  }
+  .edit-btn{
+    font-size: 0.8rem !important;
+    width: 150% !important;
+  }
+  .delete-btn{
+    font-size: 0.8rem !important;
+    width: 100% !important;
+  }
+  #map{
+    height: 200px;
+  }
+ .show-page .card-img-top{
+    width: 30vh !important;
+    height: 25vh !important;
+  }
+  /* .tax-toggle{
+    font-size: 0.5rem;
+  } */
+  .tax-toggle label{
+    display: none;
+  }
+  }
 
 
